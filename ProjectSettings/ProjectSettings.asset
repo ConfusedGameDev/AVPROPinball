@@ -17,7 +17,7 @@ PlayerSettings:
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -76,6 +76,7 @@ PlayerSettings:
   androidMinimumWindowWidth: 400
   androidMinimumWindowHeight: 300
   androidFullscreenMode: 1
+  androidAutoRotationBehavior: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
   runInBackground: 1
@@ -136,8 +137,13 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
+  visionOSBundleVersion: 1.0
+  tvOSBundleVersion: 1.0
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -6275600155326049967, guid: f30a8258bc4f8481ea58d121243edfce, type: 2}
+  - {fileID: 11400000, guid: ea0fb4f33adb347aeaa1876506b6d06c, type: 2}
+  - {fileID: 11400000, guid: 07023bfb211f24591911c9481c92f993, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -373,6 +379,13 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
+  - m_BuildTarget: VisionOS
+    m_Icons:
+    - m_Textures: []
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 0
+      m_SubKind: 
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
@@ -496,7 +509,6 @@ PlayerSettings:
   switchScreenResolutionBehavior: 2
   switchUseCPUProfiler: 0
   switchEnableFileSystemTrace: 0
-  switchUseGOLDLinker: 0
   switchLTOSetting: 0
   switchApplicationID: 0x01004b9000490000
   switchNSODependencies: 
@@ -841,7 +853,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
@@ -851,6 +863,6 @@ PlayerSettings:
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
-  platformRequiresReadableAssets: 0
+  platformRequiresReadableAssets: 1
   virtualTexturingSupportEnabled: 0
   insecureHttpOption: 0

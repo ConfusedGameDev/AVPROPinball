@@ -14,6 +14,8 @@ TagManager:
   - UI
   - Flippers
   - Ball
+  - VirtualButtons
+  - Field
   - 
   - 
   - 
@@ -35,10 +37,11 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - PolySpatial
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: PolySpatialUI
+    uniqueID: 2604257971
     locked: 0

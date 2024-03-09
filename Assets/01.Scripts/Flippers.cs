@@ -14,7 +14,7 @@ public class Flippers : MonoBehaviour
 
 
     public KeyCode Key;
-    bool isDown;
+    public bool isDown { get; set; }
 
     HingeJoint hingeJoint;
     JointSpring flipperSpring;
@@ -27,6 +27,10 @@ public class Flippers : MonoBehaviour
         flipperSpring.damper = flipperDamper;
     }
 
+    public void DoInteraction()
+    {
+        flipperSpring.targetPosition = pressedPosition;
+    }
     private void FixedUpdate()
     {
         if (isDown)
@@ -45,7 +49,7 @@ public class Flippers : MonoBehaviour
     void Update()
     {
 
-        isDown = Input.GetKey(Key);       
+        //isDown = Input.GetKey(Key);       
         
     }
 }
