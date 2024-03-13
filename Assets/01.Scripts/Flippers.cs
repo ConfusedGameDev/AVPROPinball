@@ -48,8 +48,8 @@ public class Flippers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //isDown = Input.GetKey(Key);       
+        if(Application.isEditor)
+        isDown = Input.GetKey(Key);       
         
     }
 }
