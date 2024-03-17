@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 031b4d49abc14406bad6caccbbcd9191
+guid: e7be6bf99e6672f4993a5a008ff0e9af
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flipper_FarOut
+    second: {fileID: 2100000, guid: f88652c982cd74c4e89730eabda831f7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
