@@ -10,10 +10,12 @@ public class InputScript : MonoBehaviour
     public GameObject objectBeingInteractedWith;
      
     public SpatialPointerKind interactionKind;
-    public Vector3 interactionPosition;
+    public Vector3 interactionPositionStart, currentInteractionPosition , interactionPositionEnd, interactionPositionDelta;
     PinchInteractable currentPinchObject;
+    bool isPinching;
     void OnEnable()
     {
+        isPinching = false;
         EnhancedTouchSupport.Enable();
     }
 
@@ -29,24 +31,35 @@ public class InputScript : MonoBehaviour
 
             interactionKind = primaryTouchData.Kind;
             objectBeingInteractedWith = primaryTouchData.targetObject;
-            interactionPosition = primaryTouchData.interactionPosition;
 
-            debugObject.transform.position = interactionPosition;
             
-                
+            debugObject.transform.position = interactionPositionStart;
+            if (!isPinching)
+            {
+                isPinching = true;
+                interactionPositionStart = primaryTouchData.interactionPosition;
+            }
+            currentInteractionPosition = primaryTouchData.interactionPosition;
+            
                 if (objectBeingInteractedWith.TryGetComponent<PinchInteractable>(out currentPinchObject))
                 {
                     currentPinchObject.onPinch.Invoke();
+                    currentPinchObject.updateDelta(interactionPositionDelta);
+                
+                    
                 }
-                   
-            
 
-            
-        }
+            interactionPositionDelta = primaryTouchData.interactionPosition-interactionPositionStart;
+
+
+        }   
         else
         {
-             if(currentPinchObject)
+            isPinching = false;
+            if (currentPinchObject)
             {
+                
+                interactionPositionEnd = currentInteractionPosition;    
                 currentPinchObject.onStopPinch.Invoke();
                 currentPinchObject = null;
             }

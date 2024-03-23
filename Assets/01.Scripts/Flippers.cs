@@ -18,6 +18,7 @@ public class Flippers : MonoBehaviour
 
     HingeJoint hingeJoint;
     JointSpring flipperSpring;
+    public bool useDebugKey = true;
     void Start()
     {
         hingeJoint = GetComponent<HingeJoint>();
@@ -48,7 +49,7 @@ public class Flippers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Application.isEditor)
+        if(useDebugKey)
         isDown = Input.GetKey(Key);       
         
     }

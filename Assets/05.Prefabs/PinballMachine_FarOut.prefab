@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7305479935331962933}
   - component: {fileID: 1513444390633119039}
   - component: {fileID: 7877298449543809427}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 1608167241621393590}
   - component: {fileID: 7010364122094557689}
   - component: {fileID: 6307219731319591499}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BumperR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 8178670704433002586}
   - component: {fileID: 5070954744016345763}
   - component: {fileID: 1086020290144417187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 7491609087823536537}
   - component: {fileID: 7704743098870830296}
   - component: {fileID: 4480108583698036464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 7167065157634687958}
   - component: {fileID: 5886915988821342557}
   - component: {fileID: 530549903090105565}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StarterLane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1318,7 +1318,7 @@ GameObject:
   - component: {fileID: 2383144973380464367}
   - component: {fileID: 8626539609395618618}
   - component: {fileID: 8572484973800895309}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1534,7 +1534,7 @@ GameObject:
   - component: {fileID: 2088599178959193592}
   - component: {fileID: 1387322656791996970}
   - component: {fileID: 6881065643202612332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1641,7 +1641,7 @@ GameObject:
   - component: {fileID: 5752378906582976395}
   - component: {fileID: 2855880619674543297}
   - component: {fileID: 815586284038106585}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BumperL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1857,7 +1857,7 @@ GameObject:
   - component: {fileID: 2292753090238126488}
   - component: {fileID: 3283270077200460434}
   - component: {fileID: 5260469121060388394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1964,7 +1964,7 @@ GameObject:
   - component: {fileID: 5518305376203281843}
   - component: {fileID: 4605775313032382562}
   - component: {fileID: 4853983222873899475}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2177,7 +2177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3445257221433169360}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2204,6 +2204,7 @@ Transform:
   - {fileID: 6549697998287751984}
   - {fileID: 940752107350976428}
   - {fileID: 4508608545925829701}
+  - {fileID: 1763029337293423046}
   - {fileID: 7332872570703740272}
   - {fileID: 5230579374847626673}
   m_Father: {fileID: 1545518589881265384}
@@ -2865,7 +2866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8809047914036258359}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverShortL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2902,7 +2903,7 @@ GameObject:
   - component: {fileID: 2799968854424225542}
   - component: {fileID: 2765415999020864134}
   - component: {fileID: 8688256383613271557}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ResetCube
   m_TagString: Reset
   m_Icon: {fileID: 0}
@@ -3009,7 +3010,7 @@ GameObject:
   - component: {fileID: 6832750517569418344}
   - component: {fileID: 8588946840494274436}
   - component: {fileID: 7401311692305969487}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BorderBottomL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3220,7 +3221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2416257618265305649}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverLongR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3475,7 +3476,7 @@ GameObject:
   - component: {fileID: 5082373497571816137}
   - component: {fileID: 7373343589857652527}
   - component: {fileID: 3060085678891183816}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3907,7 +3908,7 @@ GameObject:
   - component: {fileID: 8144818351607157513}
   - component: {fileID: 3914053749355160741}
   - component: {fileID: 8216871294353530235}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4230,7 +4231,7 @@ GameObject:
   - component: {fileID: 8511373501225051811}
   - component: {fileID: 8766206135274808966}
   - component: {fileID: 7328699274723783426}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4448,7 +4449,7 @@ GameObject:
   - component: {fileID: 7027294764126257493}
   - component: {fileID: 1452799660764135688}
   - component: {fileID: 6005148542619934238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4661,7 +4662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5331270035735035548}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverShortR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4700,7 +4701,7 @@ GameObject:
   - component: {fileID: 4397848469335061228}
   - component: {fileID: 5562200784080715912}
   - component: {fileID: 4539490505144720524}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StartingLane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4902,6 +4903,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+--- !u!1 &5188798426094028884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1763029337293423046}
+  - component: {fileID: 4263275444948201268}
+  - component: {fileID: 5716610179331603254}
+  - component: {fileID: 8692732672784182176}
+  m_Layer: 9
+  m_Name: ResetCube (1)
+  m_TagString: Reset
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1763029337293423046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5188798426094028884}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
+  m_LocalPosition: {x: 0.0135, y: 0.62, z: -1.66}
+  m_LocalScale: {x: 4.5078335, y: 0.1, z: 6.291781}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3445257221433169360}
+  m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
+--- !u!33 &4263275444948201268
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5188798426094028884}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5716610179331603254
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5188798426094028884}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: fc095c221f97d41a684f92080c221875, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8692732672784182176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5188798426094028884}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5210567756026745226
 GameObject:
   m_ObjectHideFlags: 0
@@ -5127,7 +5233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5027917357609771214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverLongL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5382,7 +5488,7 @@ GameObject:
   - component: {fileID: 4791678137786876617}
   - component: {fileID: 1817012961636307403}
   - component: {fileID: 6626325591601659193}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5596,7 +5702,7 @@ GameObject:
   - component: {fileID: 4424965411392925592}
   - component: {fileID: 404886021598380020}
   - component: {fileID: 8926241604301458041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5698,7 +5804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1545518589881265384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5744,7 +5850,7 @@ GameObject:
   - component: {fileID: 4977661745630786179}
   - component: {fileID: 3774158215078196468}
   - component: {fileID: 1408743944352345727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5957,7 +6063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1008453271068675436}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverMidAreaR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6212,7 +6318,7 @@ GameObject:
   - component: {fileID: 566320237457268434}
   - component: {fileID: 1807386862987929886}
   - component: {fileID: 8958676902785612731}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6425,7 +6531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1998526523764453239}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverMidAreaL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6464,7 +6570,7 @@ GameObject:
   - component: {fileID: 3518842542862705555}
   - component: {fileID: 3271272328507472756}
   - component: {fileID: 5407611052723065555}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StarterLane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6678,7 +6784,7 @@ GameObject:
   - component: {fileID: 6603858963584878976}
   - component: {fileID: 591417277328499119}
   - component: {fileID: 3320995991217245577}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6785,7 +6891,7 @@ GameObject:
   - component: {fileID: 7917506823331434138}
   - component: {fileID: 5003550482210475629}
   - component: {fileID: 4287314947443298769}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BorderBottomR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7217,7 +7323,7 @@ GameObject:
   - component: {fileID: 6350695251418704966}
   - component: {fileID: 4894535994846693477}
   - component: {fileID: 6360699674309888437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7651,7 +7757,7 @@ GameObject:
   - component: {fileID: 1874519768479062314}
   - component: {fileID: 5986329850139795608}
   - component: {fileID: 4241432628259453556}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BumperCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7867,7 +7973,7 @@ GameObject:
   - component: {fileID: 7096773890496712068}
   - component: {fileID: 3932925795393711472}
   - component: {fileID: 7377848036963237398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7973,7 +8079,7 @@ GameObject:
   - component: {fileID: 6600097882233079507}
   - component: {fileID: 535319133096633299}
   - component: {fileID: 2979098712863160773}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlaneGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8172,6 +8278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696521242192219517}
+  - component: {fileID: 1556972576128801517}
   m_Layer: 0
   m_Name: PinballMachine_FarOut
   m_TagString: Untagged
@@ -8194,8 +8301,28 @@ Transform:
   m_Children:
   - {fileID: 8310106504906327557}
   - {fileID: 5932606424927991857}
+  - {fileID: 8373007549062107019}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1556972576128801517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494866706757873626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2305ee956a04fb48c333ad9d61fc9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugObject: {fileID: 9110395508375771019}
+  objectBeingInteractedWith: {fileID: 0}
+  interactionKind: 0
+  interactionPositionStart: {x: 0, y: 0, z: 0}
+  currentInteractionPosition: {x: 0, y: 0, z: 0}
+  interactionPositionEnd: {x: 0, y: 0, z: 0}
+  interactionPositionDelta: {x: 0, y: 0, z: 0}
 --- !u!1 &8509508881889301382
 GameObject:
   m_ObjectHideFlags: 0
@@ -8208,7 +8335,7 @@ GameObject:
   - component: {fileID: 880323737597918437}
   - component: {fileID: 6981492275574439739}
   - component: {fileID: 2267204740872701100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8315,7 +8442,7 @@ GameObject:
   - component: {fileID: 3516316177548349980}
   - component: {fileID: 1913777576359719716}
   - component: {fileID: 4156562473198636247}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RolloverR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8519,6 +8646,73 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &2639461215518187458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696521242192219517}
+    m_Modifications:
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00030264756
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0020109448
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0020944015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122423794452212465, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+      propertyPath: m_Name
+      value: Systems
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+--- !u!4 &8373007549062107019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5806224026382831689, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+  m_PrefabInstance: {fileID: 2639461215518187458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9110395508375771019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6543624222762895433, guid: 57a06e13c882b43d7a577430f97f1d5c, type: 3}
+  m_PrefabInstance: {fileID: 2639461215518187458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6187492206462705626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8640,6 +8834,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2068309394799403914, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2068309394799403914, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -8700,12 +8898,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2974947769936300567, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974947769936300567, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3230120039640593438, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503789931858147116, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503789931858147116, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
+      propertyPath: m_TagString
+      value: Launcher
       objectReference: {fileID: 0}
     - target: {fileID: 3503789931858147116, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8729,6 +8939,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530328181330409904, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700741955011131673, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4700741955011131673, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
@@ -8908,6 +9122,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 159820240216036054, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1442000578122867732}
+    - targetCorrespondingSourceObject: {fileID: 3503789931858147116, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3809767377544689176}
     - targetCorrespondingSourceObject: {fileID: -5237798536246209607, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6486613753815905883}
@@ -9033,6 +9250,7 @@ MonoBehaviour:
   hitStrenght: 10000
   flipperDamper: 150
   Key: 97
+  useDebugKey: 1
 --- !u!82 &7440587882754630065
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9627,6 +9845,7 @@ MonoBehaviour:
   hitStrenght: 10000
   flipperDamper: 150
   Key: 100
+  useDebugKey: 1
 --- !u!82 &7642837176661512316
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9924,6 +10143,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &7296276698671851766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3503789931858147116, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
+  m_PrefabInstance: {fileID: 6187492206462705626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3809767377544689176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7296276698671851766}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.043406207, y: 0.039263282, z: 0.16091566}
+  m_Center: {x: -0.2953974, y: -0.031323407, z: 0.52834153}
 --- !u!1 &7489134699079302463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3616569950637482725, guid: e7be6bf99e6672f4993a5a008ff0e9af, type: 3}
@@ -10142,6 +10387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d8d30b49d05254ca8e782f4225b5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &8310106504906327557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464149971844752169, guid: 8887943325967384999b17b3fab06609, type: 3}

@@ -7,6 +7,12 @@ public class PinchInteractable : MonoBehaviour
 {
     public UnityEvent onPinch, onStopPinch;
 
+    public float zDelta;
+    public virtual void updateDelta(Vector3 currentDelta)
+    {
+        zDelta = Mathf.Clamp01(Mathf.Abs(currentDelta.z));
+
+    }
     // Start is called before the first frame update
     void Start()
     {

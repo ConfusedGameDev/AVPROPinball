@@ -1,18 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class Ball : MonoBehaviour
 {
     Vector3 startpos;
     Quaternion startRot;
     Rigidbody rb;
+    public UnityEvent onReset;
 
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.transform.name);
         if (collision.transform.CompareTag("Reset"))
             ResetBall();
+        else if (collision.transform.CompareTag("Launcher"))
+        {
+            Debug.Log("collided with launcher");
+             var launcher= FindObjectOfType<LauncherStick>();
+             if(launcher)
+            {
+                Debug.Log("try activate launcher");
+                launcher.Activate();
+            }
+        }
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -37,8 +49,17 @@ public class Ball : MonoBehaviour
         }
         transform.position = startpos;
         transform.rotation = startRot;
+        onReset.Invoke();
     }
 
+    public void addImpulse(Vector3 dir)
+    {
+        if (rb)
+        {
+            rb.AddForce(dir);
+        }
+
+    }
     
     // Update is called once per frame
     void Update()
