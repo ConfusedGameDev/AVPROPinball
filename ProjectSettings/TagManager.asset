@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Reset
   - Launcher
+  - Obstacle
   layers:
   - Default
   - TransparentFX
