@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e7be6bf99e6672f4993a5a008ff0e9af
+guid: 04dcc657a6bcd40a18f86f0bf5685ab9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,43 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Collider
-    second: {fileID: 2100000, guid: fc095c221f97d41a684f92080c221875, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Flipper_FarOut
-    second: {fileID: 2100000, guid: f88652c982cd74c4e89730eabda831f7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: M_Flipper
     second: {fileID: 2100000, guid: 9c20e4d7ac96549848285d3e675f1c7b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Metal
-    second: {fileID: 2100000, guid: fb30f5f337dc24240b07bc543e1d49ec, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Metal Flipper
-    second: {fileID: 2100000, guid: fb30f5f337dc24240b07bc543e1d49ec, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PinballAztec
-    second: {fileID: 2100000, guid: 9d26b9337f604d0468bba08d9ebc6d18, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PinballTex
-    second: {fileID: 2100000, guid: 9d26b9337f604d0468bba08d9ebc6d18, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Spring
-    second: {fileID: 2100000, guid: fb30f5f337dc24240b07bc543e1d49ec, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
