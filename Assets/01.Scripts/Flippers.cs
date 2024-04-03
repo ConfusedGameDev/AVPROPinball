@@ -19,6 +19,9 @@ public class Flippers : MonoBehaviour
     HingeJoint hingeJoint;
     JointSpring flipperSpring;
     public bool useDebugKey = true;
+    public AudioSource source;
+    public AudioClip clip;
+    bool isPressed;
     void Start()
     {
         hingeJoint = GetComponent<HingeJoint>();
@@ -31,16 +34,21 @@ public class Flippers : MonoBehaviour
     public void DoInteraction()
     {
         flipperSpring.targetPosition = pressedPosition;
+        if (source && !isPressed)
+            source.PlayOneShot(clip);
+        isPressed = true;
     }
     private void FixedUpdate()
     {
         if (isDown)
         {
-            flipperSpring.targetPosition = pressedPosition;
+
+            DoInteraction();
 
         }
         else
         {
+            isPressed = false;
             flipperSpring.targetPosition = restPosition;
         }
         hingeJoint.spring = flipperSpring;

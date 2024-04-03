@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class InteractableObstacle : MonoBehaviour
 {
 
     public int scoreValue;
-    public UnityEngine.Playables.PlayableDirector director;
+    public PlayableDirector director;
     public bool oneShot;
     public Collider objectCollider;
     public void onActivate()
@@ -21,6 +22,7 @@ public class InteractableObstacle : MonoBehaviour
     void Start()
     {
         objectCollider = GetComponent<Collider>();
+        director = GetComponent<PlayableDirector>();
     }
 
     // Update is called once per frame
