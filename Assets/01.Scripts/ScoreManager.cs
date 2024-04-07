@@ -51,6 +51,10 @@ public class ScoreManager : MonoBehaviour
             {
                 ballRenderer.material.color = Color.green;
             }
+            ballsRemaining = 3;
+            ballsRemaining--;
+            if (ballsRemaining >= 0)
+                ballsRenderers[ballsRemaining].material.color = Color.red;
             ResetScore();
         }
             
