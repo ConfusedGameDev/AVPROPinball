@@ -13,7 +13,11 @@ public class Ball : MonoBehaviour
     {
         Debug.Log(collision.transform.name);
         if (collision.transform.CompareTag("Reset"))
+        {
+            ScoreManager.Instance.onReset();    
             ResetBall();
+        }
+            
         else if (collision.transform.CompareTag("Launcher"))
         {
             Debug.Log("collided with launcher");
@@ -24,12 +28,26 @@ public class Ball : MonoBehaviour
                 launcher.Activate();
             }
         }
+        else if(collision.transform.CompareTag("Obstacle"))
+        {
+            InteractableObstacle obstacle;
+
+            if(collision.transform.TryGetComponent<InteractableObstacle>(out obstacle))
+            {
+                obstacle.onActivate();
+            }
+        }
 
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Reset"))
+        {
+            ScoreManager.Instance.onReset();
             ResetBall();
+            
+        }
+
     }
     // Start is called before the first frame update
     void Start()

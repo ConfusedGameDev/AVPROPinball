@@ -1,4 +1,4 @@
-using UnityEngine;
+    using UnityEngine;
 using TMPro;
 
 public class ScoreManager : MonoBehaviour
@@ -12,9 +12,20 @@ public class ScoreManager : MonoBehaviour
     public TextMeshPro highScoreText;
 
     private const string highScoreKey = "HighScore";
+    public Renderer[] ballsRenderers;
+
+    int ballsRemaining = 3;
 
     private void Awake()
     {
+        
+        foreach (var ballRenderer in ballsRenderers)
+        {
+            ballRenderer.material.color = Color.green;
+        }
+        
+       
+
         if (Instance == null)
         {
             Instance = this;
@@ -27,6 +38,22 @@ public class ScoreManager : MonoBehaviour
 
         LoadHighScore();
         UpdateHighScoreText();
+    }
+
+    public void onReset()
+    {
+        ballsRemaining--;
+        if (ballsRemaining >= 0)
+            ballsRenderers[ballsRemaining].material.color = Color.red;
+        else
+        {
+            foreach (var ballRenderer in ballsRenderers)
+            {
+                ballRenderer.material.color = Color.green;
+            }
+            ResetScore();
+        }
+            
     }
 
     private void LoadHighScore()

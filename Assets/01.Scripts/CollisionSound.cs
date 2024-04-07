@@ -10,8 +10,15 @@ public class CollisionSound : MonoBehaviour
 {
     public AudioSource audioSource; // The AudioSource component
 
+    private void Awake()
+    {
+        
+    }
     public void OnCollisionEnter(Collision collision)
     {
+        if (!audioSource)
+            audioSource = GetComponent<AudioSource>();
+        if(audioSource)
         audioSource.Play(); // Play the sound
     }
 }
