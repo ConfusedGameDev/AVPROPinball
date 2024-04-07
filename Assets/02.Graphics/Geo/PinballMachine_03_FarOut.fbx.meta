@@ -22,6 +22,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: M_Flipper Transparent
+    second: {fileID: 2100000, guid: d5cd50c1619084836846a01ceb38abce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Metal
     second: {fileID: 2100000, guid: fb30f5f337dc24240b07bc543e1d49ec, type: 2}
   - first:
