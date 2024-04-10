@@ -21,6 +21,16 @@ public class CollisionSound : MonoBehaviour
         if(audioSource)
         audioSource.Play(); // Play the sound
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (!audioSource)
+            audioSource = GetComponent<AudioSource>();
+        if (audioSource)
+            audioSource.Play(); // Play the sound
+
+    }
 }
 
 

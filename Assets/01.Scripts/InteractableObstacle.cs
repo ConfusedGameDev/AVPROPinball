@@ -10,11 +10,18 @@ public class InteractableObstacle : MonoBehaviour
     public PlayableDirector director;
     public bool oneShot;
     public Collider objectCollider;
+    public AudioSource source;
     public void onActivate()
     {
         ScoreManager.Instance.UpdateScore(scoreValue);
         if (director)
             director.Play();
+        if(!source)
+        {
+            source = GetComponent<AudioSource>();
+            if (source)
+                source.Play();
+        }
         if (oneShot)
             objectCollider.enabled = false;
     }
