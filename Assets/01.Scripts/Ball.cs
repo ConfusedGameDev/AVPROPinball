@@ -47,6 +47,15 @@ public class Ball : MonoBehaviour
             ResetBall();
             
         }
+        else if (other.transform.CompareTag("Obstacle"))
+        {
+            InteractableObstacle obstacle;
+
+            if (other.transform.TryGetComponent<InteractableObstacle>(out obstacle))
+            {
+                obstacle.onActivate();
+            }
+        }
 
     }
     // Start is called before the first frame update
