@@ -1497,7 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33acc3b6f04fc124fa646203f42ed25f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Dimensions: {x: 15.251084, y: 15.251084, z: 15.251084}
+  m_Dimensions: {x: 16.1, y: 16.1, z: 16.1}
   m_IsUniformScale: 1
   m_OutputConfiguration: {fileID: 11400000, guid: 7f283e4fabb7d4d068550fed286006a5, type: 2}
   m_CullingMask:
@@ -1506,18 +1506,6 @@ MonoBehaviour:
   OpenWindowOnLoad: 1
   m_ShowVolumeCameraEventsFoldout: 0
   OnWindowEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnWindowOpened:
-    m_PersistentCalls:
-      m_Calls: []
-  OnWindowClosed:
-    m_PersistentCalls:
-      m_Calls: []
-  OnWindowResized:
-    m_PersistentCalls:
-      m_Calls: []
-  OnWindowFocused:
     m_PersistentCalls:
       m_Calls: []
 --- !u!4 &1876763402
@@ -1529,7 +1517,7 @@ Transform:
   m_GameObject: {fileID: 1876763400}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.17, y: 2.78, z: -0.39}
+  m_LocalPosition: {x: 0.33, y: 1.19, z: -0.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
