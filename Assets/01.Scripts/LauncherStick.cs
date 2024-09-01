@@ -13,18 +13,26 @@ public class LauncherStick : PinchInteractable
     public float speed = 3f;
     public float force = 25f;
     public Ball ball;
+    public float animationDuration = 1f;
+    public float maxDeltaZ = 0.59f;
+    public bool canLaunch = true;
     // Start is called before the first frame update
     void Start()
     {
-        startPos = stickTransform.position;
+        startPos = stickTransform.localPosition;
     }
 
+    public void setup()
+    {
+        canLaunch = true;
+        stickTransform.localPosition = startPos;
+    }
     public override void updateDelta(Vector3 currentDelta)
     {
         
-        base.updateDelta(currentDelta);
-        if (!isLaunching)
-            stickTransform.position = startPos + stickTransform.forward * zDelta;
+       // base.updateDelta(currentDelta);
+       // if (!isLaunching)
+         //   stickTransform.position = startPos + stickTransform.forward * zDelta;
     }
     public void Activate()
     {
@@ -38,28 +46,65 @@ public class LauncherStick : PinchInteractable
         launchStarPos = stickTransform.position;
          
     }
+    public void startShoot()
+    {
+        if(canLaunch)
+        {
+            StartCoroutine(animateLaunch());
+        }
+        
+    }
+    public IEnumerator animateLaunch()
+    {
+        canLaunch = false;
+        float d = 0f;
+        launchStarPos = stickTransform.localPosition;
+        var launchEndPos= launchStarPos;
+        launchEndPos.z = maxDeltaZ;
 
+        while (d < animationDuration)
+        {
+            yield return new WaitForEndOfFrame();
+            d += Time.deltaTime;
+            stickTransform.localPosition = Vector3.Lerp(launchStarPos, launchEndPos, d / animationDuration);
+
+        }
+        
+        while(d>0)
+        {
+            yield return new WaitForEndOfFrame();
+            d -= Time.deltaTime*3f;
+            stickTransform.localPosition = Vector3.Lerp(launchStarPos, launchEndPos, d / animationDuration);
+        }
+        Shoot();
+         
+    }
     public void FixedUpdate()
     {
-        if (isLaunching)
+        /*if (isLaunching)
         {
             stickTransform.position = Vector3.Lerp(launchStarPos, startPos, delta);
             delta += Time.deltaTime*(speed*zDelta);
         }
         if (delta >= 1f)
         {
-            delta = 0;
-            isLaunching = false;
-            onFinishedLaunch.Invoke();
-            if(!ball)
-            ball = FindObjectOfType<Ball>();
-            if(ball)
-            {
-                ball.addImpulse(transform.forward * force);
-            }
+            Shoot(); 
 
         }
+        */
         
+    }
+    public void Shoot()
+    {
+        delta = 0;
+        isLaunching = false;
+        onFinishedLaunch.Invoke();
+        if (!ball)
+            ball = FindObjectOfType<Ball>();
+        if (ball)
+        {
+            ball.addImpulse(transform.forward * force);
+        }
     }
     // Update is called once per frame
     void Update()

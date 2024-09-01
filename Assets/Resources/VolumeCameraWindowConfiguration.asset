@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: VolumeCameraWindowConfiguration
   m_EditorClassIdentifier: 
   m_Mode: 0
-  m_OutputDimensions: {x: 1.5, y: 3, z: 3}
+  m_OutputDimensions: {x: 3, y: 3, z: 3}
   m_IsUniformScale: 0
