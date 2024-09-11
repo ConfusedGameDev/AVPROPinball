@@ -16,6 +16,8 @@ public class LauncherStick : PinchInteractable
     public float animationDuration = 1f;
     public float maxDeltaZ = 0.59f;
     public bool canLaunch = true;
+
+    public Vector2 minMaxForce = new Vector2(75, 250);
     // Start is called before the first frame update
     void Start()
     {
@@ -103,7 +105,9 @@ public class LauncherStick : PinchInteractable
             ball = FindObjectOfType<Ball>();
         if (ball)
         {
-            ball.addImpulse(transform.forward * force);
+            var currentForce = Random.Range(minMaxForce.x, minMaxForce.y);
+            ball.addImpulse(transform.forward * currentForce);
+            Debug.Log("Current Force " + currentForce);
         }
     }
     // Update is called once per frame
