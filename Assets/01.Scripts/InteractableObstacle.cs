@@ -14,7 +14,7 @@ public class InteractableObstacle : MonoBehaviour
     public void onActivate()
     {
         ScoreManager.Instance.UpdateScore(scoreValue);
-        if (director)
+        if (director && director.playableAsset )
             director.Play();
         if(!source)
         {
