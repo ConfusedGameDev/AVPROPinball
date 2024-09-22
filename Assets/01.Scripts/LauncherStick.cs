@@ -109,10 +109,13 @@ public class LauncherStick : PinchInteractable
             ball.addImpulse(transform.forward * currentForce);
             Debug.Log("Current Force " + currentForce);
         }
+        
     }
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+            startShoot();
+
     }
 }

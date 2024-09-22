@@ -6,7 +6,8 @@ using UnityEngine.Events;
 public class PinchInteractable : MonoBehaviour
 {
     public UnityEvent onPinch, onStopPinch;
-
+    public bool isTouch;
+    public bool canBeTouched;
     public float zDelta;
     public virtual void updateDelta(Vector3 currentDelta)
     {
@@ -24,4 +25,31 @@ public class PinchInteractable : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(!isTouch) return;
+        
+        if(other.name.Contains("Hand"))
+        {
+            canBeTouched=false;
+            onPinch?.Invoke();
+        }
+
+        
+
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if(!isTouch) return;
+
+        if(other.name.Contains("Hand"))
+        {
+            canBeTouched=true;
+            onStopPinch?.Invoke();
+        }
+
+        
+
+    }
+  
 }

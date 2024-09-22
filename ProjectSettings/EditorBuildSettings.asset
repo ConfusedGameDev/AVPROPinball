@@ -5,11 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/04.Scenes/SampleScene.unity
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/SampleSceneUnbounded.unity
+    guid: d49e913a117634cdd953337ffbb2080c
   m_configObjects:
-    UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: 93e84f40738004659843f0a3e2b09086, type: 2}
-    com.unity.polyspatial.xr.xr_settings: {fileID: 11400000, guid: 63d061be1986d4db5a4bcca8e29169d4, type: 2}
-    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: ea0fb4f33adb347aeaa1876506b6d06c, type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f30a8258bc4f8481ea58d121243edfce, type: 2}
+    UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: 25e1f68848051c946b9048e8426e646c, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: bb65518a4a80049acbc5e85e70dbbee0, type: 2}
+    com.unity.polyspatial.xr.xr_settings: {fileID: 11400000, guid: cad8e6c3a14b3491eb1cdeb9295338f7, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d1b44b12dbc12554c862e577406554bd, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 91384b14c79fa804d924648a4e81b07c, type: 2}
+  m_UseUCBPForAssetBundles: 0

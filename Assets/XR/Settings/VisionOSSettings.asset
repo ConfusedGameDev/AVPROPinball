@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: VisionOSSettings
   m_EditorClassIdentifier: 
   m_AppMode: 1
-  m_HandsTrackingUsageDescription: For Playing
-  m_WorldSensingUsageDescription: To detect your world
-  m_RuntimeSettings: {fileID: 11400000, guid: 07023bfb211f24591911c9481c92f993, type: 2}
+  m_HandsTrackingUsageDescription: Hand tracking required for interaction
+  m_WorldSensingUsageDescription: World sensing required for plane detection
+  m_RuntimeSettings: {fileID: 11400000, guid: ac517bd71f33e472fa5c25448bc7a703, type: 2}
   m_UpperLimbVisibility: 0
   m_FoveatedRendering: 1
-  m_IL2CPPLargeExeWorkaround: 0
+  m_MetalImmersionStyle: 0
+  m_RealityKitImmersionStyle: 0
+  m_IL2CPPLargeExeWorkaround: 1
+  m_SkipPresentToMainScreen: 0

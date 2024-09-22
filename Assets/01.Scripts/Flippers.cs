@@ -22,6 +22,13 @@ public class Flippers : MonoBehaviour
     public AudioSource source;
     public AudioClip clip;
     bool isPressed;
+
+    
+
+    public GameObject ball;
+    public float force = 250;
+    public bool hasBall;
+    public bool canAddImpulse = true;
     void Start()
     {
         hingeJoint = GetComponent<HingeJoint>();
@@ -37,6 +44,7 @@ public class Flippers : MonoBehaviour
         if (source && !isPressed)
             source.PlayOneShot(clip);
         isPressed = true;
+        
     }
     private void FixedUpdate()
     {
@@ -44,15 +52,32 @@ public class Flippers : MonoBehaviour
         {
 
             DoInteraction();
+            if (canAddImpulse && hasBall)
+            {
+                ball.GetComponent<Rigidbody>().AddForce(transform.forward * force);
+            }
+            canAddImpulse = false;
 
         }
         else
         {
+            canAddImpulse = true;
             isPressed = false;
             flipperSpring.targetPosition = restPosition;
         }
         hingeJoint.spring = flipperSpring;
         
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.gameObject == ball)
+            hasBall = true;
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (hasBall && collision.gameObject == ball)
+            hasBall = false;
     }
     // Update is called once per frame
     void Update()
