@@ -18,6 +18,10 @@ public class LauncherStick : PinchInteractable
     public bool canLaunch = true;
 
     public Vector2 minMaxForce = new Vector2(75, 250);
+
+    public float ballDetectionDistance = 0.1f;
+    public LayerMask ballLayer;
+    public Transform ballChecker;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +54,9 @@ public class LauncherStick : PinchInteractable
     }
     public void startShoot()
     {
-        if(canLaunch)
+       
+       
+        if(canLaunch)   
         {
             StartCoroutine(animateLaunch());
         }
@@ -94,7 +100,21 @@ public class LauncherStick : PinchInteractable
 
         }
         */
-        
+        Ray ray = new Ray(ballChecker.position, ballChecker.forward);
+        RaycastHit hito;
+        if (ballChecker && Physics.Raycast(ray, out hito,ballDetectionDistance, ballLayer))
+        {
+            Debug.Log(hito.transform.name);
+            Ball b;
+            canLaunch = hito.transform.TryGetComponent<Ball>(out b);
+
+
+        }
+        else
+        {
+            canLaunch = false;
+        }
+
     }
     public void Shoot()
     {
